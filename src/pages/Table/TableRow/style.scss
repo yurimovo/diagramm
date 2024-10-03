@@ -1,0 +1,66 @@
+.diagram-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+  height: 40px;
+
+  &__name {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: darkgray;
+    background-color: #f7f7f7;
+    width: 40%;
+    height: 100%;
+    margin-right: 5px;
+    padding-left: 10px;
+  }
+
+  &__today {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: darkgray;
+    background-color: #c1f1f7;
+    width: 20%;
+    height: 100%;
+    margin-right: 5px;
+  }
+
+  &__yesterday {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: darkgray;
+    background-color: #f7f7f7;
+    width: 20%;
+    height: 100%;
+    margin-right: 5px;
+  }
+
+  &__this-week {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: darkgray;
+    background-color: #f7f7f7;
+    width: 20%;
+    height: 100%;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

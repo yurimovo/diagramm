@@ -1,0 +1,79 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    height: 40px;
+    padding: 5px;
+
+    &__name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 10px;
+      font-weight: 500;
+      font-size: 18px;
+      width: 40%;
+      height: 100%;
+      text-align: center;
+      margin-right: 5px;
+      color: darkgray;
+      background-color: #f7f7f7;
+    }
+
+    &__today {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 10px;
+      font-weight: 500;
+      font-size: 18px;
+      width: 20%;
+      height: 100%;
+      text-align: center;
+      color: darkgray;
+      background-color: #c1f1f7;
+      margin-right: 5px;
+    }
+
+    &__yesterday {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 10px;
+      font-weight: 500;
+      font-size: 18px;
+      width: 20%;
+      height: 100%;
+      text-align: center;
+      color: darkgray;
+      margin-right: 5px;
+      background-color: #f7f7f7;
+    }
+
+    &__this-week {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 10px;
+      font-weight: 500;
+      font-size: 18px;
+      width: 20%;
+      height: 100%;
+      text-align: center;
+      color: darkgray;
+      background-color: #f7f7f7;
+    }
+  }
+
+  &__body {
+    width: 100%;
+  }
+}
