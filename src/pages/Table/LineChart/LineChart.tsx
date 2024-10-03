@@ -20,6 +20,7 @@ const LineChart: React.FC<LineChartProps> = ({ data }) => {
     labels: data.map((item) => item.revDate),
     datasets: [
       {
+        label: 'Значение',
         data: data.map((item) => item.rev),
         borderColor: 'rgba(75, 192, 192, 1)',
         backgroundColor: 'rgba(75, 192, 192, 0.2)',
@@ -37,7 +38,11 @@ const LineChart: React.FC<LineChartProps> = ({ data }) => {
     },
   };
 
-  return <Line data={chartData} options={options} />;
+  return (
+    <div className='line-chart'>
+      <Line data={chartData} options={options} />
+    </div>
+  );
 };
 
 export default LineChart;

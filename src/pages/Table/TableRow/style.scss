@@ -12,7 +12,7 @@
     font-weight: 500;
     font-size: 14px;
     color: darkgray;
-    background-color: #f7f7f7;
+    background-color: #f5f5f5;
     width: 40%;
     height: 100%;
     margin-right: 5px;
@@ -40,11 +40,31 @@
     padding-right: 10px;
     font-weight: 500;
     font-size: 14px;
-    color: darkgray;
-    background-color: #f7f7f7;
     width: 20%;
     height: 100%;
     margin-right: 5px;
+
+    &__value {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      color: darkgray;
+      width: 70%;
+    }
+
+    &__percent {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      margin-left: 20px;
+      width: 30%;
+    }
   }
 
   &__this-week {

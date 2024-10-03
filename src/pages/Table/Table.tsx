@@ -14,6 +14,7 @@ interface TableDataItem {
   revenue: RevenueData[];
   today: string;
   yesterday: string;
+  percents: number;
   thisWeek: string;
 }
 
@@ -29,6 +30,7 @@ const tableData: TableDataItem[] = [
     ],
     today: '1200',
     yesterday: '1000',
+    percents: 4,
     thisWeek: '7430',
   },
   {
@@ -42,6 +44,7 @@ const tableData: TableDataItem[] = [
     ],
     today: '400',
     yesterday: '200',
+    percents: 0,
     thisWeek: '3100',
   },
   {
@@ -55,6 +58,7 @@ const tableData: TableDataItem[] = [
     ],
     today: '200',
     yesterday: '500',
+    percents: 0,
     thisWeek: '2200',
   },
   {
@@ -68,6 +72,7 @@ const tableData: TableDataItem[] = [
     ],
     today: '600',
     yesterday: '300',
+    percents: 0,
     thisWeek: '2130',
   },
   {
@@ -81,6 +86,7 @@ const tableData: TableDataItem[] = [
     ],
     today: '1700',
     yesterday: '1800',
+    percents: 44,
     thisWeek: '9500',
   },
   {
@@ -94,6 +100,7 @@ const tableData: TableDataItem[] = [
     ],
     today: '1150',
     yesterday: '900',
+    percents: 50,
     thisWeek: '6820',
   },
   {
@@ -107,6 +114,7 @@ const tableData: TableDataItem[] = [
     ],
     today: '120',
     yesterday: '100',
+    percents: -9,
     thisWeek: '743',
   },
   {
@@ -120,6 +128,7 @@ const tableData: TableDataItem[] = [
     ],
     today: '110',
     yesterday: '80',
+    percents: 0,
     thisWeek: '730',
   },
   {
@@ -133,6 +142,7 @@ const tableData: TableDataItem[] = [
     ],
     today: '7',
     yesterday: '5',
+    percents: -6,
     thisWeek: '19',
   },
   {
@@ -146,6 +156,7 @@ const tableData: TableDataItem[] = [
     ],
     today: '7',
     yesterday: '5',
+    percents: -6,
     thisWeek: '15',
   }
 ]
@@ -178,7 +189,8 @@ const Table: React.FC = () => {
             <TableRow 
               name={item.name} 
               today={item.today} 
-              yesterday={item.yesterday} 
+              yesterday={item.yesterday}
+              percents={item.percents} 
               thisWeek={item.thisWeek} 
               onSelect={() => handleRowClick(index, item.revenue)}
             />
